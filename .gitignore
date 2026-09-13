@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+*.pyo
+*.spec.bak
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.vscode/
+.idea/
+*.log
+
+# Platform tools binaries (user-provided, not committed)
+tools/platform-tools/adb.exe
+tools/platform-tools/fastboot.exe
+tools/platform-tools/*.dll
+tools/platform-tools/AdbWinApi.dll
+tools/platform-tools/AdbWinUsbApi.dll
+
+# App runtime data
+app/resources/cache/
+*.almus-settings.ini
+logs/*.log
+
+# Build output
+ALMUS_PHONE_LAB_Windows.zip
+ALMUS_PHONE_LAB_COMPLETE.zip
