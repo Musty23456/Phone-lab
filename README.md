@@ -236,6 +236,15 @@ runs — the app never executes these silently.
 - **Fastboot device not listed**: some devices need a separate
   bootloader/Fastboot driver in addition to the ADB driver — check your
   manufacturer's developer pages.
+- **"Failed to load Python DLL ... python311.dll — The specified module could
+  not be found"**: the app was started without its `_internal` folder, or a
+  Windows runtime is missing. Fix: (1) use `ALMUS_PHONE_LAB_Setup.exe` to
+  install (it places everything in Program Files and installs the Visual C++
+  runtime); (2) if using the ZIP, right-click → **Extract All** into a new
+  folder (e.g. `C:\ALMUS_PHONE_LAB`) and never move the `.exe` out of that
+  folder; (3) install the Microsoft Visual C++ 2015-2022 Redistributable
+  (x64); (4) make sure Windows is 10/11 64-bit; (5) check antivirus
+  quarantine for `python311.dll`.
 - **App won't start**: run `ALMUS_PHONE_LAB.exe` from a terminal
   (`cmd`/PowerShell) to see any startup error text, and check that your
   antivirus hasn't quarantined a bundled DLL.
